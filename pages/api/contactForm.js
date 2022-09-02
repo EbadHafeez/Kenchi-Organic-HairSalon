@@ -29,5 +29,6 @@ export default async function formData(req, res) {
         <p><strong>Message:</strong> ${data.message}</p>`
     }
 
-    return await sgMail.send(msg)
+    await sgMail.send(msg)
+    res.status(200).json({ message: "Email Sent" })
 }
