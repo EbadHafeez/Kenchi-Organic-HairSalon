@@ -3,7 +3,7 @@ const contactForm_data = require('../../database/CformScheema')
 const sgMail = require('@sendgrid/mail')
 
 const { SG_API_KEY, FROM_EMAIL, TO_EMAIL } = process.env
-sgMail.setApiKey('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')
+sgMail.setApiKey(SG_API_KEY)
 
 export default function formData(req, res) {
 
@@ -19,8 +19,8 @@ export default function formData(req, res) {
     })
 
     const msg = {
-        to: "ebadhafeez0504@gmail.com",
-        from: 'kenchiorganics0@gmail.com',
+        to: TO_EMAIL,
+        from: FROM_EMAIL,
         subject: "Query from Webite",
         html: `<p> <strong>Name:</strong> ${data.name}</p>
         <p><strong>Email:</strong> ${data.email}</p>
