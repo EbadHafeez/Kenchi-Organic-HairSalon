@@ -3,9 +3,14 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/globals.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import { useEffect } from 'react'
 config.autoAddCss = false
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.js");
+  }, []);
+
   return (
     <>
       <Head>

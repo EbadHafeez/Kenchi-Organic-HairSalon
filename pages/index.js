@@ -217,7 +217,7 @@ export default function Home() {
             <div className="contact-form">
               <div className="contact-left-side">
                 <h2>Contact Form</h2>
-                <form action="/" method="post">
+                <form action="/">
                   <div className="input-box" id="input-box1">
                     <input type="text" required name="name" id="name" placeholder="Name" value={name} onChange={({ target }) => setName(target.value)} />
                     <input type="email" required name="email" id="name" placeholder="Email" value={email} onChange={({ target }) => setEmail(target.value)} />
@@ -234,10 +234,7 @@ export default function Home() {
                 </form>
               </div>
               <div className="contact-right-side">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7355052875027!2d67.06696231498584!3d24.907002049524625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33fb05ae99dd7%3A0xa8650e8dcd3680cf!2sBaloch%20goth%20Gulshan-e-Iqbal!5e0!3m2!1sen!2s!4v1653242081475!5m2!1sen!2s"
-                  width="100%" height="100%" loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.713662423728!2d67.06823451498582!3d24.90774684949495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f220999c135%3A0xa6ea58bed4affaab!2sMemon%20Farm%20House%20Booking%20Office!5e0!3m2!1sen!2s!4v1662146635773!5m2!1sen!2s" width="100%" height="100%" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>

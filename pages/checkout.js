@@ -5,7 +5,7 @@ import axios from "axios"
 import { server } from '../config'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping, faTrashCan, faRightLong } from '@fortawesome/free-solid-svg-icons'
 import { useRouter } from 'next/router'
 
 const Checkout = ({ products }) => {
@@ -121,7 +121,7 @@ const Checkout = ({ products }) => {
                         </ul>
                         <div className="right-nav">
                             <ul className="navbar-nav">
-                                <a target="_blank" href="./checkout"><i id='cart_icon' className={`${styles.i} fa-solid fa-cart-shopping`}></i></a>
+                                <a target="_blank" href="./checkout"><FontAwesomeIcon id='cart_icon' className={`${styles.i} fa-solid fa-cart-shopping`} icon={faCartShopping}></FontAwesomeIcon></a>
                                 <li>
                                     <a href="#contact"><button type="button" className="btn px-4 py-2">Book Now</button></a>
                                 </li>
@@ -139,7 +139,7 @@ const Checkout = ({ products }) => {
                     <div className="row">
                         <div className="col-md-8 mb-4">
                             <div className="card">
-                                <form className="card-body" method="post" action="/">
+                                <form className="card-body" action="/">
                                     <div className="row">
                                         <div className="col-md-6 mb-4">
                                             <div className="md-form ">
@@ -232,7 +232,7 @@ const Checkout = ({ products }) => {
                                 </li>
                             </ul>
                             <a href="/products" className={styles.back_link}>
-                                <p>Back to Shopping <i className="fa-solid fa-right-long"></i></p>
+                                <p>Back to Shopping <FontAwesomeIcon className="fa-solid fa-right-long" icon={faRightLong} ></FontAwesomeIcon></p>
                             </a>
 
                         </div>

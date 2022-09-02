@@ -4,6 +4,8 @@ import style from "../styles/Home.module.css"
 import { server } from "../config"
 import { useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 const Product = ({ products }) => {
     const [localStorageProducts, setLocalStorageProducts] = useState([])
@@ -75,7 +77,7 @@ const Product = ({ products }) => {
                             </ul>
                             <div className="right-nav">
                                 <ul className="navbar-nav">
-                                    <a target="_blank" href="/checkout"><i id='cart_icon' className="fa-solid fa-cart-shopping"></i></a>
+                                    <a target="_blank" href="/checkout"><FontAwesomeIcon id='cart_icon' className="fa-solid fa-cart-shopping" icon={faCartShopping}></FontAwesomeIcon></a>
                                     <li>
                                         <a href="/#contact"><button type="button" className="btn px-4 py-2">Book Now</button></a>
                                     </li>
