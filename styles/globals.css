@@ -54,7 +54,7 @@ a {
   height: 4px;
 }
 
-.navbar {
+nav.navbar {
   background-color: rgba(0, 0, 0, 0.438) !important;
   padding: 1em 5em !important;
   border: none !important;
