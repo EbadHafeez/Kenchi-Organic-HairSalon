@@ -5,7 +5,7 @@ const sgMail = require('@sendgrid/mail')
 const { SG_API_KEY, FROM_EMAIL, TO_EMAIL } = process.env
 sgMail.setApiKey(SG_API_KEY)
 
-export default async function formData(req, res) {
+export default function formData(req, res) {
 
     db().then(() => {
         console.log("DB Connected")
@@ -29,6 +29,10 @@ export default async function formData(req, res) {
         <p><strong>Message:</strong> ${data.message}</p>`
     }
 
-    await sgMail.send(msg)
+    sgMail.send(msg).then(() => {
+        console.log("Email Sent!")
+    }).catch((e) => {
+        console.log(e)
+    })
     res.status(200).json({ message: "Email Sent" })
 }
