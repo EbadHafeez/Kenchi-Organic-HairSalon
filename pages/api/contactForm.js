@@ -7,6 +7,7 @@ sgMail.setApiKey(SG_API_KEY)
 
 export default function formData(req, res) {
 
+
     db().then(() => {
         console.log("DB Connected")
     }).catch(err => console.error(err))
