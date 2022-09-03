@@ -7,16 +7,10 @@ sgMail.setApiKey(SG_API_KEY)
 
 export default async function orderFormData(req, res) {
     try {
-        db().then(() => {
-            console.log("DB Connected")
-        }).catch(err => console.error(err))
+        await db()
 
         const data = new orderForm_data(req.body)
-        data.save().then(() => {
-            console.log("Form Submitted")
-        }).catch(err => {
-            res.status(400).json("Error:" + err)
-        })
+        await data.save()
 
         const msg = {
             to: TO_EMAIL,
