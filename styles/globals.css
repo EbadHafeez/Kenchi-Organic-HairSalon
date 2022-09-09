@@ -55,11 +55,9 @@ a {
 }
 
 nav.navbar {
-  background-color: transparent !important;
+  background-color: rgba(0, 0, 0, 0.438) !important;
   padding: 1em 5em !important;
   border: none !important;
-  position: absolute;
-  width: 100%;
 }
 
 #navbarNav {
@@ -496,7 +494,6 @@ nav.navbar {
   flex-basis: 40%;
 }
 
-
 footer {
   background-color: #2c2c2c;
 }
@@ -573,7 +570,7 @@ footer {
   }
 
   .bg_section {
-    /* height: calc(var(--viewport-height) - 90px) !important; */
+    height: calc(var(--viewport-height) - 90px) !important;
   }
 
   .right-nav .navbar-nav {
@@ -679,7 +676,7 @@ footer {
   }
 
   .bg_section {
-    padding: 0 .25em 0em .25em;
+    padding: 0 .25em 3em .25em !important;
   }
 
   .content-heading-border {
@@ -770,12 +767,20 @@ footer {
 
 @media (max-width:478px) {
 
+  .about-content button,
+  #cream-left-side button,
+  #hairoil-right-side button,
+  .contact-form .contact-left-side button,
+  .bg_headings button {
+    font-size: calc((1.9vh + 1.6vw)/1.5) !important;
+  }
+
   p {
     font-size: 15px !important;
   }
 
   .bg_section {
-    /* height: calc(var(--viewport-height) - 85px) !important; */
+    height: calc(var(--viewport-height) - 85px) !important;
   }
 
   .bg_section {
