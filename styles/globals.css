@@ -504,13 +504,6 @@ footer {
   }
 }
 
-@media (min-width: 1024px) {
-  .bg_section {
-    padding-top: 2rem;
-  }
-}
-
-
 
 @media (max-width:1024px) and (min-width:980px) {
   .bg_headings h1 {
@@ -527,6 +520,11 @@ footer {
 }
 
 @media (max-width:1024px) {
+
+  .bg_section {
+    padding: 0 .25em 3em .25em !important;
+  }
+
 
   #hairoil-left-side img {
     width: 60%;
@@ -673,10 +671,6 @@ footer {
   .contact-form .contact-left-side button,
   .bg_headings button {
     font-size: calc((1.9vh + 1.6vw)/1.8) !important;
-  }
-
-  .bg_section {
-    padding: 0 .25em 3em .25em !important;
   }
 
   .content-heading-border {
