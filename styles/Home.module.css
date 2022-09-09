@@ -12,7 +12,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: calc(var(--viewport-height) - 97px);
+  /* height: calc(var(--viewport-height) - 97px); */
+  height: 100vh;
   overflow: hidden;
 }
 

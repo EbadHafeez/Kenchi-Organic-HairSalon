@@ -101,29 +101,26 @@ const Checkout = ({ products }) => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav" id="navlist">
                             <li className={`nav-item ${styles.navItem}`}>
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                <Link href="/"><a className="nav-link active" aria-current="page">Home</a></Link>
                             </li>
                             <li className={`nav-item ${styles.navItem}`}>
-                                <a className="nav-link" href="/#about">About</a>
+                                <Link href="/#about"><a className="nav-link">About</a></Link>
                             </li>
                             <li className={`nav-item ${styles.navItem}`}>
-                                <a className="nav-link" href="#">Blog</a>
+                                <Link href="./products"><a className="nav-link">Products</a></Link>
                             </li>
                             <li className={`nav-item ${styles.navItem}`}>
-                                <a className="nav-link" href="./products">Products</a>
+                                <Link href="/#contact"><a className="nav-link">Contact</a></Link>
                             </li>
                             <li className={`nav-item ${styles.navItem}`}>
-                                <a className="nav-link" href="/#contact">Contact</a>
-                            </li>
-                            <li className={`nav-item ${styles.navItem}`}>
-                                <a className="nav-link" id="cart-li" href="./checkout">Cart</a>
+                                <Link href="/checkout"><a className="nav-link" id="cart-li">Cart</a></Link>
                             </li>
                         </ul>
                         <div className="right-nav">
                             <ul className="navbar-nav">
                                 <a target="_blank" href="./checkout"><FontAwesomeIcon id='cart_icon' className={`${styles.i} fa-solid fa-cart-shopping`} icon={faCartShopping}></FontAwesomeIcon></a>
                                 <li>
-                                    <a href="#contact"><button type="button" className="btn px-4 py-2">Book Now</button></a>
+                                    <Link href="/#contact"><button type="button" className="btn px-4 py-2">Book Now</button></Link>
                                 </li>
                             </ul>
                         </div>
