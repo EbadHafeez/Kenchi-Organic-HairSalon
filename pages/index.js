@@ -42,7 +42,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Kenchi Organic Hair Salon</title>
         <meta name="description" content="Kenchi is a Hair salon for women and also a certified Organic beauty products seller. A salon where you can get your desired Haircuts without even shortening your Hair length." />
-        <meta name="robots" content="index,follow" />
+        <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://kenchi.com" />
         <meta property="og:image" content="https://kenchi/images/card-image.png" />
