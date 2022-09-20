@@ -113,11 +113,6 @@ nav.navbar {
   display: none;
 }
 
-/*
-#cart_icon {
-  display: none;
-} */
-
 .section-about-heading {
   display: flex;
   align-items: center;
@@ -208,6 +203,7 @@ nav.navbar {
   text-align: center;
   font-size: calc((1.3vh + 1.5vw)/2);
   transition: .2s;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.267);
 }
 
 .about-content button:hover {
@@ -423,7 +419,7 @@ nav.navbar {
 }
 
 .contact-form {
-  padding: 2em 2em;
+  box-shadow: 0px 0px 23px 0px rgb(0 0 0 / 39%);
   display: flex;
 }
 
