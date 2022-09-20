@@ -135,7 +135,7 @@ const Checkout = ({ products }) => {
                     </div>
                     <div className="row">
                         <div className="col-md-8 mb-4">
-                            <div className="card">
+                            <div className={`${styles.card} card`}>
                                 <form className="card-body" action="/">
                                     <div className="row">
                                         <div className="col-md-6 mb-4">

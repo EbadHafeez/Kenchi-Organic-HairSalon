@@ -234,39 +234,39 @@ export default function Home() {
                 </form>
               </div>
               <div className="contact-right-side">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.713662423728!2d67.06823451498582!3d24.90774684949495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f220999c135%3A0xa6ea58bed4affaab!2sMemon%20Farm%20House%20Booking%20Office!5e0!3m2!1sen!2s!4v1662146635773!5m2!1sen!2s" width="100%" height="100%" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.713662423728!2d67.06823451498582!3d24.90774684949495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f220999c135%3A0xa6ea58bed4affaab!2sMemon%20Farm%20House%20Booking%20Office!5e0!3m2!1sen!2s!4v1662146635773!5m2!1sen!2s" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
         </section>
       </main>
-      <footer>
-        <div className="container">
-          <footer className="d-flex flex-wrap justify-content-between align-items-center py-3">
-            <div className="col-md-4 d-flex align-items-center" id="copyright">
-              <Link href="/">
-                <a className="text-decoration-none ">
-                  <img src="/images/kenchi-white.png" width="50px" alt="kenchi" />
-                </a>
-              </Link>
-              <span className="ms-3 text-white">© {new Date().getFullYear()} Kenchi Organic's</span>
-            </div>
+      {/* <footer> */}
+      <footer className="py-3">
+        <div className="container d-flex flex-wrap justify-content-between align-items-center" id="footerContainer">
+          <div className="col-md-4 d-flex align-items-center" id="copyright">
+            <Link href="/">
+              <a className="text-decoration-none ">
+                <img src="/images/kenchi-white.png" width="50px" alt="kenchi" />
+              </a>
+            </Link>
+            <span className="ms-3 text-white">© {new Date().getFullYear()} Kenchi Organic's</span>
+          </div>
 
-            <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-              <li className="ms-3"><a className="text-muted" href="https://www.facebook.com/kenchi321/"
-                target="_blank"><img src="/icons/facebook.png" width="24px" alt="facebook" /></a>
-              </li>
-              <li className="ms-3"><a className="text-muted"
-                href="https://instagram.com/kenchi_by_namrah?utm_medium=copy_link" target="_blank"><img
-                  src="/icons/instagram.png" width="24px" alt="instagram" /></a></li>
-              <li className="ms-3"><a className="text-muted" href="https://wa.me/message/OQZ3YX65G3RIN1"
-                target="_blank"><img src="/icons/whatsapp.png" width="24px" alt="whatsapp" /></a></li>
-              <li className="ms-3"><a className="text-muted" href="mailto:namrahfayyaz0@gmail.com" target="_blank"><img
-                src="/icons/email.png" width="24px" alt="email" /></a></li>
-            </ul>
-          </footer>
+          <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li className="ms-3"><a className="text-muted" href="https://www.facebook.com/kenchi321/"
+              target="_blank"><img src="/icons/facebook.png" width="24" alt="facebook" /></a>
+            </li>
+            <li className="ms-3"><a className="text-muted"
+              href="https://instagram.com/kenchi_by_namrah?utm_medium=copy_link" target="_blank"><img
+                src="/icons/instagram.png" width="24" alt="instagram" /></a></li>
+            <li className="ms-3"><a className="text-muted" href="https://wa.me/message/OQZ3YX65G3RIN1"
+              target="_blank"><img src="/icons/whatsapp.png" width="24" alt="whatsapp" /></a></li>
+            <li className="ms-3"><a className="text-muted" href="mailto:namrahfayyaz0@gmail.com" target="_blank"><img
+              src="/icons/email.png" width="24" alt="email" /></a></li>
+          </ul>
         </div>
       </footer>
+      {/* </footer> */}
     </>
   )
 }
