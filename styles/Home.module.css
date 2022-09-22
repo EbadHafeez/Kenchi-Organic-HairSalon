@@ -14,6 +14,7 @@
   flex-direction: column;
   height: calc(var(--viewport-height) - 97px);
   overflow: hidden;
+  padding-bottom: 1em;
 }
 
 .bg_headings {
