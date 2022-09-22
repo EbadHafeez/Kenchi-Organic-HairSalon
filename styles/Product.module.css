@@ -1,3 +1,7 @@
+nav.navbar {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
 .header {
     background-image: url(/images/main-bg.jpg);
     background-position: center;
@@ -6,7 +10,7 @@
 }
 
 .bg_section {
-    background-color: rgba(0, 0, 0, 0.438);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,4 +34,11 @@
     background-color: palevioletred;
     color: white;
     transform: scale(1.1);
+}
+
+@media (max-width: 460px) {
+    .header {
+        background-position: bottom;
+        background-image: url('/images/product-pics/togetherProduct.jpg') !important;
+    }
 }

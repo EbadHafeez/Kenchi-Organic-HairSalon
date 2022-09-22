@@ -73,6 +73,9 @@ export default function Home() {
                   <Link href="/products"><a className="nav-link">Products</a></Link>
                 </li>
                 <li className="nav-item">
+                  <Link href="/blog"><a className="nav-link">Blog</a></Link>
+                </li>
+                <li className="nav-item">
                   <Link href="#contact"><a className="nav-link">Contact</a></Link>
                 </li>
                 <li className="nav-item">

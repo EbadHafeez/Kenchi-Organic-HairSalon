@@ -48,7 +48,7 @@ const Product = ({ products }) => {
                 <meta name="keywords" content="kenchi, kenchi organic, kenchi organics, hair, women hair salon near me, woman hair salon near me,  hair salon, hair growth, hair oil, hair growth oil, hair growth products, hair salon near me, best hair salon, hair salons in karachi, organic products, whitening cream, no makeup cream, beauty creams, best beauty creams, night cream, tint, cherry berry, moisturizer, hairstyles, hair color, hair dye, hair cutting, 2022, trending hairstyles,trending hair color, " />
             </Head>
             <header className={styles.header}>
-                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <nav className={`${styles.navbar} navbar navbar-expand-lg navbar-light bg-light`}>
                     <div className="container-fluid">
                         <a className="navbar-brand" href="#">
                             <img src="/images/Kenchi-logo.png" alt="kenchi" width="76" height="55" />
@@ -157,7 +157,7 @@ const Product = ({ products }) => {
 }
 
 export const getServerSideProps = async () => {
-    const res = await fetch(`${server}/api/products`)
+    const res = await fetch(`${server}/api/products/products`)
     const products = await res.json()
     return {
         props: {

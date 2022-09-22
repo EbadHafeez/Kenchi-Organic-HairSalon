@@ -271,7 +271,7 @@ const Checkout = ({ products }) => {
 }
 
 export const getServerSideProps = async () => {
-    const res = await fetch(`${server}/api/products`)
+    const res = await fetch(`${server}/api/products/products`)
     const products = await res.json()
     return {
         props: {

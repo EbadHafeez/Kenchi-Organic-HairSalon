@@ -18,6 +18,8 @@
     "bootstrap": "^5.2.0",
     "emailjs": "^4.0.1",
     "framer-motion": "^7.2.1",
+    "gray-matter": "^4.0.3",
+    "marked": "^4.1.0",
     "mongoose": "^6.4.4",
     "next": "^12.2.2",
     "nodemailer": "^6.7.8",

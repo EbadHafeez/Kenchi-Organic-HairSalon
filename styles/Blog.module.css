@@ -1,0 +1,68 @@
+.main {
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+}
+
+.header {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.header h1 {
+    color: rgb(51, 51, 51);
+}
+
+.card {
+    box-shadow: 0 0 24px 0px #00000057;
+}
+
+.button {
+    background-color: palevioletred !important;
+    border-color: rgb(216, 68, 117) !important;
+}
+
+.pagination li a {
+    color: palevioletred !important;
+}
+
+.pagination .active a {
+    color: white !important;
+    background-color: palevioletred !important;
+    border-color: rgb(216, 68, 117);
+}
+
+nav.navbar {
+    background-color: #FBDA61 !important;
+    background-image: linear-gradient(177.5deg, #FBDA61 0%, #FF5ACD 100%);
+    min-height: 80px;
+}
+
+.blog_heading {
+    color: rgb(44, 44, 44) !important;
+}
+
+.blog_links {
+    color: #bb3b95;
+}
+
+.blog_links:hover {
+    color: #99698b;
+}
+
+.navItem a {
+    color: rgb(44, 44, 44) !important;
+}
+
+.navItem a:hover {
+    color: white !important;
+}
+
+@media (max-width: 580px) {
+    .blog_heading {
+        display: none;
+    }
+
+    .header {
+        padding-bottom: 1em !important;
+    }
+}

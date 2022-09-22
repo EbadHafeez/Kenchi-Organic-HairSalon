@@ -1,0 +1,45 @@
+.main {
+    background-image: url("/images/bg.png");
+}
+
+nav.navbar {
+    background-color: rgb(51, 51, 51) !important;
+}
+
+.bars {
+    color: white !important;
+}
+
+.toggler {
+    border-color: white !important;
+}
+
+h3.blog_heading {
+    color: white !important;
+}
+
+.navItem a {
+    color: white !important;
+}
+
+.back_btn {
+    background-color: palevioletred;
+}
+
+.back_btn:hover {
+    background-color: rgb(211, 93, 132);
+}
+
+.blog_links {
+    color: palevioletred;
+}
+
+.blog_links:hover {
+    color: palevioletred;
+}
+
+@media (max-width: 580px) {
+    .blog_heading {
+        display: none;
+    }
+}
